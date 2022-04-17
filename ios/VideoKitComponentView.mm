@@ -1,5 +1,7 @@
 
+#ifndef AS_USE_VIDEO
 #define AS_USE_VIDEO 1
+#endif
 
 #import "VideoKitComponentView.h"
 
