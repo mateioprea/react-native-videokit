@@ -17,7 +17,7 @@ export default function App() {
       <Text>Result</Text>
       {source === 'source1' && (
         <Video
-          isUserInteractionEnabled={false}
+          isUserInteractionEnabled={true}
           source={source1}
           autoPlay={false}
           muted={true}
@@ -26,7 +26,7 @@ export default function App() {
       )}
       {source === 'source2' && (
         <Video
-          isUserInteractionEnabled={false}
+          isUserInteractionEnabled={true}
           source={source2}
           autoPlay={true}
           muted={false}

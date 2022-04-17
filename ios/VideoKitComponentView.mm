@@ -78,6 +78,7 @@ using namespace facebook::react;
 {
     NSString *src = [[NSString alloc] initWithUTF8String: source.uri.c_str()];
 
+    [_videoNode resetToPlaceholder];
     dispatch_async(dispatch_get_main_queue(), ^ {
         AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:src]];
         self->_videoNode.asset = asset;
