@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,mm}", "cpp/**/*.{h,cpp}"
 
   s.dependency "React-Core"
-  s.dependency "Texture"
 
   if fabric_enabled
       s.pod_target_xcconfig = {
         'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/boost" "$(PODS_ROOT)/boost-for-react-native"  "$(PODS_ROOT)/RCT-Folly"',
         "OTHER_CPLUSPLUSFLAGS" => "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1",
         "CLANG_CXX_LANGUAGE_STANDARD" => "c++17",
+        "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) AS_USE_VIDEO=1"
       }
       s.platforms       = { ios: '11.0', tvos: '11.0' }
       s.compiler_flags  = folly_compiler_flags
@@ -40,5 +40,6 @@ Pod::Spec.new do |s|
       s.dependency "RCTRequired"
       s.dependency "RCTTypeSafety"
       s.dependency "ReactCommon/turbomodule/core"
+      s.dependency "Texture"
   end
 end

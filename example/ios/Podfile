@@ -17,7 +17,6 @@ target 'VideokitExample' do
   )
 
   pod 'react-native-videokit', :path => '../..'
-  pod 'Texture'
 
   target 'VideokitExampleTests' do
     inherit! :complete

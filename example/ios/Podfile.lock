@@ -815,7 +815,6 @@ DEPENDENCIES:
   - React-rncore (from `../node_modules/react-native/ReactCommon`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - Texture
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -959,7 +958,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 218a2503198ff28a085f8e16622a8d8f507c8019
   React-logger: f79dd3cc0f9b44f5611c6c7862badd891a862cf8
   react-native-flipper-performance-plugin: ab280430bbdd17deffb7a30d94b604738cd04150
-  react-native-videokit: 25f19f11715169cef1d30bb1f9a6a9ba94942d94
+  react-native-videokit: d596388305aa953cd0614e92c1fccd89e036448a
   React-perflogger: 30ab8d6db10e175626069e742eead3ebe8f24fd5
   React-RCTActionSheet: 4b45da334a175b24dabe75f856b98fed3dfd6201
   React-RCTAnimation: d6237386cb04500889877845b3e9e9291146bc2e
@@ -979,6 +978,6 @@ SPEC CHECKSUMS:
   Yoga: 17cd9a50243093b547c1e539c749928dd68152da
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: b42a84911a035a873612f00a698cb6bb22ff5890
+PODFILE CHECKSUM: 1b9c42e90dd065e7d9bf2cdaefd606d1d80eca9d
 
 COCOAPODS: 1.11.3
