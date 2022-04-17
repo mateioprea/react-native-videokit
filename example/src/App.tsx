@@ -1,18 +1,52 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-videokit';
+import { StyleSheet, View, Text, Button } from 'react-native';
+import Video from 'react-native-videokit';
+import { useState } from 'react';
+
+const source1 = {
+  uri: 'https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4',
+};
+const source2 = { uri: 'https://www.w3schools.com/html/mov_bbb.mp4' };
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const [source, setSource] = useState('source1');
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result</Text>
+      {source === 'source1' && (
+        <Video
+          isUserInteractionEnabled={false}
+          source={source1}
+          autoPlay={false}
+          muted={true}
+          style={{ flex: 1 }}
+        />
+      )}
+      {source === 'source2' && (
+        <Video
+          isUserInteractionEnabled={false}
+          source={source2}
+          autoPlay={true}
+          muted={false}
+          style={{ flex: 1 }}
+        />
+      )}
+      <View style={{ flex: 1 }}>
+        <Button
+          title={'Video 1'}
+          onPress={() => {
+            setSource('source1');
+          }}
+        />
+        <Button
+          title={'Video 2'}
+          onPress={() => {
+            setSource('source2');
+          }}
+        />
+      </View>
     </View>
   );
 }
@@ -20,8 +54,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   box: {
     width: 60,
