@@ -58,6 +58,8 @@ using namespace facebook::react;
         _videoNode.placeholderEnabled = true;
         _videoNode.URL = [NSURL URLWithString:@"https://source.unsplash.com/user/c_v_r/1600x900"];
         
+        [_videoNode.view setUserInteractionEnabled:defaultProps->isUserInteractionEnabled];
+        
         [_view addSubview:_videoNode.view];
         self.contentView = _videoNode.view;
         
@@ -104,6 +106,10 @@ using namespace facebook::react;
     
     if (oldViewProps.loop != newViewProps.loop) {
         _videoNode.shouldAutorepeat = newViewProps.loop;
+    }
+    
+    if (oldViewProps.isUserInteractionEnabled != newViewProps.isUserInteractionEnabled) {
+        [_videoNode.view setUserInteractionEnabled:newViewProps.isUserInteractionEnabled];
     }
     
     [super updateProps:props oldProps:oldProps];
