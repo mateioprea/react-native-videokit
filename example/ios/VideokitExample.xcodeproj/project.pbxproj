@@ -18,6 +18,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9142BA712809E1B700EE912C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9142BA702809E1B700EE912C /* AppDelegate.mm */; };
 		9142BA722809E1B700EE912C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9142BA702809E1B700EE912C /* AppDelegate.mm */; };
+		91836C20280CA3C5008A432F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91836C1F280CA3C5008A432F /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7533C965B72700ED5E109803 /* libPods-VideokitExample-VideokitExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideokitExample-VideokitExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VideokitExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9142BA702809E1B700EE912C /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = VideokitExample/AppDelegate.mm; sourceTree = "<group>"; };
+		91836C1F280CA3C5008A432F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		CA3E69C5B9553B26FBA2DF04 /* libPods-VideokitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideokitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00ACF0FDA8BF921659E2F9A /* Pods-VideokitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideokitExample.release.xcconfig"; path = "Target Support Files/Pods-VideokitExample/Pods-VideokitExample.release.xcconfig"; sourceTree = "<group>"; };
 		EC1294380F6AD2F72CA45BA5 /* Pods-VideokitExample-VideokitExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideokitExample-VideokitExampleTests.release.xcconfig"; path = "Target Support Files/Pods-VideokitExample-VideokitExampleTests/Pods-VideokitExample-VideokitExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91836C20280CA3C5008A432F /* AVKit.framework in Frameworks */,
 				4C39C56BAD484C67AA576FFA /* libPods-VideokitExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +132,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91836C1F280CA3C5008A432F /* AVKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				CA3E69C5B9553B26FBA2DF04 /* libPods-VideokitExample.a */,

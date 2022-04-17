@@ -7,9 +7,11 @@ import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNati
 export interface NativeProps extends ViewProps {
   source: Readonly<{ uri: string }>;
   autoPlay?: boolean;
+  autoRepeat?: boolean;
   muted?: boolean;
   loop?: boolean;
   isUserInteractionEnabled?: boolean;
+  pictureInPicture?: boolean;
 }
 
 export default codegenNativeComponent<NativeProps>(

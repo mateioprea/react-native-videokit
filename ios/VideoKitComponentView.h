@@ -1,6 +1,8 @@
 #import <React/RCTViewComponentView.h>
 #import <UIKit/UIKit.h>
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
 
 #ifndef NativeComponentExampleComponentView_h
 #define NativeComponentExampleComponentView_h

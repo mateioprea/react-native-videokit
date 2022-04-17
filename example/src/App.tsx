@@ -30,6 +30,7 @@ export default function App() {
           source={source2}
           autoPlay={true}
           muted={false}
+          pictureInPicture={false}
           style={{ flex: 1 }}
         />
       )}
